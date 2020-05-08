@@ -15,7 +15,7 @@ import "./Chat.scss";
 const blockName = "chat-wrapper";
 let socket;
 
-const ENDPOINT = "localhost:5000";
+const ENDPOINT = process.env.NODE_ENV === "development" ?  "localhost:5000" : "https://chat-app-with-sockets.herokuapp.com/";
 
 const Chat = ({ room, username, onChangeUsers }) => {
   
