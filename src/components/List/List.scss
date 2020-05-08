@@ -1,0 +1,42 @@
+.list-wrapper {
+  text-align: center;
+  height: calc(100vh - 120px);
+  background: #f2f5f8;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-right: 2px solid white;
+  max-width: 150px;
+  min-width: 150px;
+
+  h2 {
+    font-weight: 700;
+    border-bottom: 2px solid white;
+    padding: 17px 12px;
+    font-size: 16px;
+  }
+
+  &__users-list {
+    overflow-y: auto;
+
+    span {
+      display: block;
+      overflow: hidden;
+      padding: 5px 5px 5px 15px;
+      text-overflow: ellipsis;
+      text-align: left;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 4px;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: #53e3a6;
+        top: 45%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(to bottom right, #50a3a2 0%, #53e3a6 100%);
+  padding: 60px;
+  box-sizing: border-box;
+  font-family: "Cabin Sketch", cursive;
+}
+
+.chat-main-wrapper {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  max-width: 600px;
+  margin: 0 auto;
+}
